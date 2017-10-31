@@ -1,0 +1,193 @@
+irun(64): 13.20-s034: (c) Copyright 1995-2015 Cadence Design Systems, Inc.
+TOOL:	irun(64)	13.20-s034: Started on Apr 27, 2017 at 17:29:33 CDT
+irun
+	-top top
+	-svseed random
+	+UVM_TESTNAME=single_master_read_write_brdcst_test
+	-input source_regress.tcl
+	-l log/irun1.log
+	-uvm
+	-sv
+	-access +rwc
+	-uvmhome /usr/local/packages/cadence_2015/incisiv13.2/tools/uvm
+	-incdir /home/ecelrc/students/krai/kamayni_files_new/src/rtl
+	-incdir /home/ecelrc/students/krai/kamayni_files_new/src/tb
+	-incdir /home/ecelrc/students/krai/kamayni_files_new/src/tb/uvm_tb
+	-incdir /home/ecelrc/students/krai/kamayni_files_new/src/tb/uvm_tb/master_uvc
+	-incdir /home/ecelrc/students/krai/kamayni_files_new/src/tb/uvm_tb/tests
+	-cflags "-I/home/ecelrc/students/krai/kamayni_files_new/src/rtl -I/home/ecelrc/students/krai/kamayni_files_new/src/tb"
+	-coverage functional
+	-covdut top
+	-covoverwrite
+	/home/ecelrc/students/krai/kamayni_files_new/src/rtl/mesi_isc.v
+	/home/ecelrc/students/krai/kamayni_files_new/src/rtl/mesi_isc_broad.v
+	/home/ecelrc/students/krai/kamayni_files_new/src/rtl/mesi_isc_broad_cntl.v
+	/home/ecelrc/students/krai/kamayni_files_new/src/rtl//mesi_isc_breq_fifos_cntl.v
+	/home/ecelrc/students/krai/kamayni_files_new/src/rtl/mesi_isc_breq_fifos.v
+	/home/ecelrc/students/krai/kamayni_files_new/src/rtl/mesi_isc_basic_fifo.v
+	/home/ecelrc/students/krai/kamayni_files_new/src/tb/uvm_tb/master_uvc/master_uvc.sv
+	/home/ecelrc/students/krai/kamayni_files_new/src/tb/uvm_tb/top.sv
+	/home/ecelrc/students/krai/kamayni_files_new/src/tb/mesi_isc_assertion.v
+	-covtest mycov_func25.cov
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+irun: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+irun: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+irun: *W,UVMDEP: The value of -uvmhome contained a path to an deprecated uvm install location. Now using the default home location.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+irun: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+irun: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+Recompiling... reason: file '../src/tb/uvm_tb/tests/constrained_config_addr_test.sv' is newer than expected.
+	expected: Thu Apr 27 17:15:27 2017
+	actual:   Thu Apr 27 17:29:02 2017
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+irun: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+Compiling UVM packages (uvm_pkg.sv cdns_uvm_pkg.sv) using uvmhome location /usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncvlog: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncvlog: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+file: /home/ecelrc/students/krai/kamayni_files_new/src/tb/mesi_isc_assertion.v
+ncvlog: *W,SPDUSD: Include directory /home/ecelrc/students/krai/kamayni_files_new/src/tb given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 2
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+irun: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+irun: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncelab: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		uvm_pkg
+		{*Name Protected*}
+		cdns_uvm_pkg
+		master_uvc_pkg
+		$unit_0x50050c0e
+		top
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: functional
+	Building instance specific data structures.
+ncelab: *W,CGDOGV: The target goal, by default, is set as 100.
+ncelab: *W,CGPIDF: Covergroup "per_instance" option , by default, is set as 0.
+ncelab: *W,COVOPM: Coverage configuration file command "set_covergroup -optimize_model" can be specified to improve the performance and scalability of coverage model containing SV covergroups. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                       Instances  Unique
+		Modules:                      12       8
+		Interfaces:                    4       1
+		Verilog packages:              4       4
+		Registers:                 15043   10769
+		Scalar wires:                 55       -
+		Expanded wires:              409      32
+		Vectored wires:               34       -
+		Named events:                 40      48
+		Always blocks:               176     156
+		Initial blocks:              364     210
+		Parallel blocks:              32      33
+		Cont. assignments:            46      56
+		Pseudo assignments:           23      23
+		Assertions:                   49      49
+		Covergroup Instances:          0       1
+		Compilation units:             1       1
+		SV Class declarations:       229     342
+		SV Class specializations:    428     428
+		Simulation timescale:        1ps
+	Writing initial simulation snapshot: worklib.top:sv
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncsim: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+Loading snapshot worklib.top:sv .................... Done
+SVSEED set randomly from command line: -1961986511
+ncsim> source /usr/local/packages/cadence_2015/incisiv13.2/tools/inca/files/ncsimrc
+ncsim> source /usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d/additions/sv/files/tcl/uvm_sim.tcl
+ncsim> run
+----------------------------------------------------------------
+CDNS-UVM-1.1d (13.20-s034)
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test single_master_read_write_brdcst_test...
+connect_phase: connection made
+test run_phase: read_seq start
+read_broadcast_seq: Inside body, before start_item
+master_driver: before seq_item_port.get_next_item
+master_driver: before seq_item_port.get_next_item
+master_driver: before seq_item_port.get_next_item
+master_driver: before seq_item_port.get_next_item
+master_driver: after seq_item_port.get_next_item
+master_driver: Entered read_mem, tr.mbus_cmd = ,100
+master_driver: Waiting for mbus_ack
+master_driver: Received mbus_ack
+master_driver: After alppying NOP, waiting for read_en from controller
+cbus_ack1_latch set
+cbus_ack2_latch set
+cbus_ack3_latch set
+cbus_ack0_latch set
+read_broadcast_seq: Inside body, after finish_item
+UVM_INFO /usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_objection.svh(1268) @ 1550000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report catcher Summary ---
+
+
+Number of demoted UVM_FATAL reports  :    0
+Number of demoted UVM_ERROR reports  :    0
+Number of demoted UVM_WARNING reports:    0
+Number of caught UVM_FATAL reports   :    0
+Number of caught UVM_ERROR reports   :    0
+Number of caught UVM_WARNING reports :    0
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :    2
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[RNTST]     1
+[TEST_DONE]     1
+Simulation complete via $finish(1) at time 1550 NS + 51
+/usr/local/packages/cadence_2015/incisiv13.2/tools/methodology/UVM/CDNS-1.1d/sv/src/base/uvm_root.svh:457     $finish;
+ncsim> exit
+ncsim: *W,COVOPM: Coverage configuration file command "set_covergroup -optimize_model" can be specified to improve the performance and scalability of coverage model containing SV covergroups. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+ncsim: *W,CGPIZE: Instance coverage for covergroup instance "mesi_cg" will not be dumped to database as per_instance option value is set to 0:../src/tb/uvm_tb/mesi_isc_subscriber.sv, 300.
+ncsim: *W,CGPIZE: Instance coverage for covergroup instance "mesi_cg" will not be dumped to database as per_instance option value is set to 0:../src/tb/uvm_tb/mesi_isc_subscriber.sv, 300.
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  top(top)
+  scope    :  scope
+  testname :  mycov_func25.cov
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_00000000_47810285.ucm (reused)
+  data               :  ./cov_work/scope/mycov_func25.cov/icc_00000000_47810285.ucd
+TOOL:	irun(64)	13.20-s034: Exiting on Apr 27, 2017 at 17:29:37 CDT  (total: 00:00:04)

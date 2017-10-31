@@ -1,0 +1,59 @@
+ncverilog(64): 13.20-s034: (c) Copyright 1995-2015 Cadence Design Systems, Inc.
+TOOL:	ncverilog	13.20-s034: Started on Apr 02, 2017 at 21:00:49 CDT
+ncverilog
+	+access+r
+	+incdir+/home/ecelrc/students/aqazi/Verif/Project/mesi_isc/src/tb/
+	+incdir+/home/ecelrc/students/aqazi/Verif/Project/mesi_isc/src/rtl/
+	../src/tb/mesi_isc_tb.v
+	../src/rtl/mesi_isc.v
+	../src/rtl/mesi_isc_broad.v
+	../src/rtl/mesi_isc_broad_cntl.v
+	../src/rtl/mesi_isc_breq_fifos_cntl.v
+	../src/rtl/mesi_isc_breq_fifos.v
+	../src/rtl/mesi_isc_basic_fifo.v
+	../src/tb/mesi_isc_tb_cpu.v
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncverilog: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+SOFTINCLUDE $SYSTEM_CDS_LIB_DIR/cds.lib
+|
+ncsim: *W,DLCVAR (/usr/local/packages/ncsu-cdk-1-6-0-beta/cdssetup/cds.lib,1): cds.lib Invalid environment variable ''.
+Loading snapshot worklib.mesi_isc_tb:v .................... Done
+ncsim> source /usr/local/packages/cadence_2015/incisiv13.2/tools/inca/files/ncsimrc
+ncsim> run
+Watchdog finish
+
+Statistic
+
+CPU 3. WR:         0 RD:         0 NOP:       669  
+
+CPU 2. WR:         0 RD:         0 NOP:       676
+
+CPU 1. WR:         0 RD:         0 NOP:       656
+
+CPU 0. WR:          0 RD:         0 NOP:       677
+
+Total rd and wr accesses:          0
+
+Simulation complete via $finish(1) at time 2000950 NS + 0
+../src/tb/mesi_isc_tb.v:315   $finish;
+ncsim> exit
+TOOL:	ncverilog	13.20-s034: Exiting on Apr 02, 2017 at 21:00:50 CDT  (total: 00:00:01)

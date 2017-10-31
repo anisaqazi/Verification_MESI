@@ -1,0 +1,36 @@
+# vsim -voptargs="+acc" -c top 
+# Start time: 10:31:13 on Apr 24,2017
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  ModelSim SE-64 10.6 Dec 13 2016Linux 2.6.32-642.11.1.el6.x86_64
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.mesi_master_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.master_uvc_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# ** Warning: (vsim-PLI-3691) /home/ecelrc/students/aqazi/Verif/Project/kamayni_files_new/src/tb/uvm_tb/tests/single_master_read_write_brdcst_test.sv(15): Expected a system task, not a system function '$urandom_range'.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::single_master_read_write_brdcst_test::run_phase File: /home/ecelrc/students/aqazi/Verif/Project/kamayni_files_new/src/tb/uvm_tb/top.sv
+# Loading work.top(fast)
+# Loading work.mesi_master_if(fast)
+# Loading work.mesi_isc(fast)
+# Loading work.mesi_isc_broad(fast)
+# Loading work.mesi_isc_broad_cntl(fast)
+# Loading work.mesi_isc_basic_fifo(fast)
+# Loading work.mesi_isc_breq_fifos(fast)
+# Loading work.mesi_isc_breq_fifos_cntl(fast)
+# Loading work.mesi_isc_basic_fifo(fast__1)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading /misc/linuxws/packages/mentor_2016/modelsim10.6/modeltech/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# End time: 10:31:17 on Apr 24,2017, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 1

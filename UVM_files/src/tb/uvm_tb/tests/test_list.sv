@@ -1,0 +1,7 @@
+`include "base_test.sv"
+`include "single_master_read_write_brdcst_test.sv"
+`include "simultaneous_brdcst_req_test.sv"
+`include "other_masters_req_when_one_master_sends_read_write.sv"
+`include "invalid_read_write_seq_test.sv"
+`include "multiple_req_by_all_masters.sv"
+`include "constrained_config_addr_test.sv"

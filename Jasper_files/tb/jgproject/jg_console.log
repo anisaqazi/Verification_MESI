@@ -1,0 +1,27 @@
+2017-05-04 16:24:33.562317 (24072) main____ INFO    ----------------------------------------
+2017-05-04 16:24:33.562539 (24072) main____ INFO    JasperGold version info
+2017-05-04 16:24:33.562554 (24072) main____ INFO      tool      : JasperGold 2015.09
+2017-05-04 16:24:33.562566 (24072) main____ INFO      version   : 2015.09 FCS 64 bits
+2017-05-04 16:24:33.562574 (24072) main____ INFO      build date: 2015.09.29 22:07:28 PDT
+2017-05-04 16:24:33.562580 (24072) main____ INFO    ----------------------------------------
+2017-05-04 16:24:33.562584 (24072) main____ INFO    Runtime info:
+2017-05-04 16:24:33.562591 (24072) main____ INFO      platform  : Linux 2.6.32-642.11.1.el6.x86_64 x86_64
+2017-05-04 16:24:33.562599 (24072) main____ INFO      hostname  : koopa
+2017-05-04 16:24:33.562604 (24072) main____ INFO      pid       : 24072
+2017-05-04 16:24:33.562610 (24072) main____ INFO      arguments : '-style' 'windows'
+2017-05-04 16:24:33.562615 (24072) main____ INFO    ----------------------------------------
+2017-05-04 16:24:33.564997 (24072) lic__man INFO    Claim 'main' for <ui>.
+2017-05-04 16:24:33.577822 (24072) lic_core INFO    (1) checking out 'jasper_interactive' ...
+2017-05-04 16:24:33.590516 (24072) lic_core INFO    ... (1) checkout succeeded
+2017-05-04 16:24:33.590612 (24072) lic__man INFO    Claim 'fpv' for <ui>.
+2017-05-04 16:24:33.590650 (24072) lic_core INFO    (2) checking out 'jasper_fpv' ...
+2017-05-04 16:24:33.601940 (24072) lic_core INFO    ... (2) checkout succeeded
+2017-05-04 16:24:34.681166 (24072) lic__man INFO    Claim 'fpv' for <ui>.
+2017-05-04 16:24:34.760337 (24072) lic__man INFO    Unclaim 'fpv' for <ui>.
+2017-05-04 16:24:34.760391 (24072) lic__man INFO    Claim 'fpv' for <ui>.
+2017-05-04 16:24:34.768946 (24072) session_ INFO    Starting analysis session with session id 'session_0' ...
+2017-05-04 16:24:34.771309 (24072) session_ INFO    Analysis session with session id 'session_0' started (pid: 24146)
+2017-05-04 16:24:40.208461 (24072) session_ INFO    Analysis session 'session_0' connected to the console (host: 146.6.221.71:53690)
+2017-05-04 16:24:51.191784 (24072) lic__man INFO    Unclaim everything for 'session_0*'.
+2017-05-04 16:25:00.878346 (24072) main____ INFO    About to exit: requested from GUI
+2017-05-04 16:25:00.939035 (24072) main____ INFO    Exiting.

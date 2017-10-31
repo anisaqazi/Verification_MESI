@@ -1,0 +1,4 @@
+IMC(64): 13.20-s026: (c) Copyright 1995-2015 Cadence Design Systems Inc
+Starting gui mode
+imc: *I,RUNLD: Successfully loaded run /home/ecelrc/students/krai/kamayni_files_new/sim/cov_work/scope/all5.
+Adding recursive exclude to coveritem '$unit/"mesi_isc_subscriber::mesi_cg"/mbus_cmds_cross_cp'

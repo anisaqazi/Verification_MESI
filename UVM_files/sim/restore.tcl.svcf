@@ -1,0 +1,150 @@
+# SimVision Command Script (Mon Apr 24 02:16:47 PM CDT 2017)
+#
+# Version 13.20.s034
+#
+# You can restore this configuration with:
+#
+#      irun -seed 2615 -top top -input source.tcl -l irun.elab.log -uvm -sv -access +rwc -uvmhome /usr/local/packages/cadence_2015/incisiv13.2/tools/uvm -incdir /home/ecelrc/students/krai/kamayni_files_new/src/rtl -incdir /home/ecelrc/students/krai/kamayni_files_new/src/tb -incdir /home/ecelrc/students/krai/kamayni_files_new/src/tb/uvm_tb -incdir /home/ecelrc/students/krai/kamayni_files_new/src/tb/uvm_tb/master_uvc -incdir /home/ecelrc/students/krai/kamayni_files_new/src/tb/uvm_tb/tests -cflags -I/home/ecelrc/students/krai/kamayni_files_new/src/rtl -I/home/ecelrc/students/krai/kamayni_files_new/src/tb /home/ecelrc/students/krai/kamayni_files_new/src/rtl/mesi_isc.v /home/ecelrc/students/krai/kamayni_files_new/src/rtl/mesi_isc_broad.v /home/ecelrc/students/krai/kamayni_files_new/src/rtl/mesi_isc_broad_cntl.v /home/ecelrc/students/krai/kamayni_files_new/src/rtl//mesi_isc_breq_fifos_cntl.v /home/ecelrc/students/krai/kamayni_files_new/src/rtl/mesi_isc_breq_fifos.v /home/ecelrc/students/krai/kamayni_files_new/src/rtl/mesi_isc_basic_fifo.v /home/ecelrc/students/krai/kamayni_files_new/src/tb/uvm_tb/master_uvc/master_uvc.sv /home/ecelrc/students/krai/kamayni_files_new/src/tb/uvm_tb/top.sv -input restore.tcl
+#
+
+
+#
+# Simulator
+#
+database require simulator -hints {
+	simulator "irun -gui -seed 2615 -top top -input source.tcl -l irun.elab.log -uvm -sv -access +rwc -uvmhome /usr/local/packages/cadence_2015/incisiv13.2/tools/uvm -incdir /home/ecelrc/students/krai/kamayni_files_new/src/rtl -incdir /home/ecelrc/students/krai/kamayni_files_new/src/tb -incdir /home/ecelrc/students/krai/kamayni_files_new/src/tb/uvm_tb -incdir /home/ecelrc/students/krai/kamayni_files_new/src/tb/uvm_tb/master_uvc -incdir /home/ecelrc/students/krai/kamayni_files_new/src/tb/uvm_tb/tests -cflags {-I/home/ecelrc/students/krai/kamayni_files_new/src/rtl -I/home/ecelrc/students/krai/kamayni_files_new/src/tb} /home/ecelrc/students/krai/kamayni_files_new/src/rtl/mesi_isc.v /home/ecelrc/students/krai/kamayni_files_new/src/rtl/mesi_isc_broad.v /home/ecelrc/students/krai/kamayni_files_new/src/rtl/mesi_isc_broad_cntl.v /home/ecelrc/students/krai/kamayni_files_new/src/rtl//mesi_isc_breq_fifos_cntl.v /home/ecelrc/students/krai/kamayni_files_new/src/rtl/mesi_isc_breq_fifos.v /home/ecelrc/students/krai/kamayni_files_new/src/rtl/mesi_isc_basic_fifo.v /home/ecelrc/students/krai/kamayni_files_new/src/tb/uvm_tb/master_uvc/master_uvc.sv /home/ecelrc/students/krai/kamayni_files_new/src/tb/uvm_tb/top.sv -input restore.tcl"
+}
+
+#
+# Design Browser windows
+#
+if {[catch {window new WatchList -name "Design Browser 1" -geometry 1440x712+0+31}] != ""} {
+    window geometry "Design Browser 1" 1440x712+0+31
+}
+window target "Design Browser 1" on
+browser using {Design Browser 1}
+browser set -scope [subst  {simulator::[format {top.mesi_isc_inst}]} ]
+browser set \
+    -signalsort name
+browser yview see [subst  {simulator::[format {top.mesi_isc_inst}]} ]
+browser timecontrol set -lock 0
+
+#
+# Waveform windows
+#
+if {[catch {window new WaveWindow -name "Waveform 1" -geometry 1440x712+0+31}] != ""} {
+    window geometry "Waveform 1" 1440x712+0+31
+}
+window target "Waveform 1" on
+waveform using {Waveform 1}
+waveform sidebar visibility partial
+waveform set \
+    -primarycursor TimeA \
+    -signalnames name \
+    -signalwidth 290 \
+    -units ps \
+    -valuewidth 75
+waveform baseline set -time 0
+
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.clk}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.rst}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_if_master0.mbus_cmd[2:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_if_master0.mbus_cmd_wire[2:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_if_master0.mbus_addr[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_if_master0.mbus_addr_wire[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_if_master0.mbus_ack}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_if_master0.cbus_addr[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_if_master0.cbus_ack_wire}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_if_master0.cbus_ack}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_if_master1.mbus_cmd_wire[2:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_if_master1.mbus_cmd[2:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_if_master1.mbus_addr_wire[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_if_master1.mbus_addr[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_if_master1.mbus_ack}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_isc_inst.mbus_cmd0_i[2:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_isc_inst.mbus_cmd1_i[2:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_isc_inst.mbus_cmd2_i[2:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_isc_inst.mbus_cmd3_i[2:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_isc_inst.mbus_addr0_i[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_isc_inst.mbus_addr1_i[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_isc_inst.mbus_addr2_i[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_isc_inst.mbus_addr3_i[31:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_isc_inst.mbus_ack0_o}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_isc_inst.mbus_ack1_o}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_isc_inst.mbus_ack2_o}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_isc_inst.mbus_ack3_o}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_isc_inst.clk}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_isc_inst.rst}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{simulator::[format {top.mesi_if_master0.cbus_cmd[2:0]}]}
+	} ]]
+
+waveform xview limits 0 1024000ps
+
+#
+# Waveform Window Links
+#
+
+#
+# Console windows
+#
+console set -windowname Console
+window geometry Console 1440x712+0+31
